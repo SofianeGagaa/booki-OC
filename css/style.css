@@ -13,6 +13,7 @@
 
 body {
     display: flex;
+    margin: 0;
 }
 
 .main-container {
@@ -43,20 +44,42 @@ img {
     object-fit: contain;
 }
 
+.fa-solid:not(.fa-location-dot) {
+    color: var(--main-color);
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+
 
     img {
         height: 40px;
     }
 
-}
-a {
-    color: inherit;
-    text-decoration: none;
+    ul {
+        gap: 20px;
+    }
+
+    a {
+        display: block;
+        padding: 28px 0;
+        border-top: solid 2px transparent;
+        
+
+
+        &:hover,
+        &:focus {
+            border-color: var(--main-color);
+            color: var(--main-color);
+        }
+    }
 }
 
 .section-title {
@@ -99,6 +122,29 @@ a {
     padding: 30px;
     box-sizing: border-box;
 }
+
+.filters {
+    display: flex;
+
+    ul {
+        display: flex ;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    li {
+        border: 2px solid var(--main-bg-color);
+        border-radius: 20px;
+        padding: 5px 10px;
+        font-weight: bold;
+
+        &:hover,
+        &:focus {
+            background-color: var(--filter-bg-color);
+            cursor: pointer;
+        }
+    }
+    }
 
 /****** Hebergements ***********/
 .hebergements {
