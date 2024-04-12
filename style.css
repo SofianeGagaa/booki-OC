@@ -202,10 +202,15 @@ a {
 }
 
 .card img {
+    height: 200px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+.hebergements-cards a {
+    width: calc((100% - 60px) / 3);
+}
+
 
 .card-title {
     font-size: 16px;
@@ -249,15 +254,12 @@ a {
 
 .hebergements-cards {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
+    
     flex-wrap: wrap;
     margin-bottom: 30px;
 }
 
-.hebergements-cards a {
-    width: 30%;
-    margin-bottom: 30%;
-}
 
 .hebergements-cards img {
     width: 100%;
@@ -270,7 +272,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 5px 5px 10px 15px;
+    padding: 5px;
     box-sizing: border-box;
 }
 
