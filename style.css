@@ -16,18 +16,11 @@ html {
     scroll-behavior: smooth;
 }
 
-/* {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: black;
-}*/
-
 body {
     margin: 0;
     padding: 0;
-    /*display: flex;
-    flex-direction: column;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
 }
 
 .main-container {
@@ -58,10 +51,16 @@ h1 {
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     margin: 0;
     }
+
+h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+}
 
 p {
     font-size: 14px;
@@ -70,9 +69,7 @@ p {
     display: block;
     }
 
-figure {
-    margin: 0;
-}
+
 
 /****** Header *******/
 header {
@@ -84,7 +81,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    padding: 20px 0;
+    padding: 20px 10px 0 0;
 }
 
 img {
@@ -93,15 +90,33 @@ img {
     object-fit: contain;
 }
 
+nav img {
+    width: 50px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
+li a:hover {
+    color: var(--main-color);
+    cursor: pointer;
+    text-decoration: overline;
+}
+
 nav ul {
     display: flex;
     gap: 20px;
+}
+
+button {
+    color: white;
+    border: none;
+    background-color: var(--main-color);
+    border-radius: 0 8px 8px 0;
+    padding: 5px 5px;
 }
 
 .filters {
@@ -126,27 +141,17 @@ nav ul {
     }
 }
 
-/* #logo {
-    margin: 0;
-    padding: 0;
-    font-family: 'Raleway', sans-serif;
-    height: 40px;
-    max-width: 100%;
-    object-fit: contain;
-    overflow-clip-margin: content-box;
-}*/
+form, .filters {
+        margin-bottom: 2px;
+        margin-top: 2px;
+        padding-bottom: 2px;
+        padding-top: 2px;  
+}
 
-/* .logo h1 {
-        margin: 0;
-        padding: 0;   
-    }*/
-
-.logo p {
+.filters h2 {
     margin: 0;
-    padding: 0;
-    font-weight: 400;
-    font-size: 14px;
-    color: var(--main-color)
+    padding-right: 5px;
+    font-weight: bold;
 }
 
 i {
@@ -155,19 +160,18 @@ i {
 }
 
         /*.header-text-content {
-
             display: flex;
             flex-direction: column;
             align-items: center;
         }*/
 
         .header-text-content a {
-            color: var(--main-color);
-            font-weight: 700;
+            /*color: var(--main-color);*/
+            /*font-weight: 700;*/
         }
 
         .header-text-content a:hover {
-            text-decoration: underline;
+            /*text-decoration: underline;*/
         }
 
         .fa-solid {
@@ -336,6 +340,15 @@ i {
 }
 
 /****** Activities ***********/
+figure {
+    margin: 0;
+
+
+    figcaption {
+        margin: 0;
+        padding: 0;
+    }
+}
 
 .activities {
     margin-top: 50px;
@@ -353,6 +366,9 @@ i {
     img {
         height: 400px;
         object-fit: cover;
+        border-radius: 20px 20px 0 0;
+
+
     }
 }
 
@@ -389,13 +405,7 @@ i {
 }
 
 /****** Footer ***********/
-.footer-container {
-    display: flex;
-    flex-direction: column;
-
-}
-
-/*footer {
+footer {
     margin-top: 50px;
     padding: 20px;
     background-color: var(--main-bg-color);
@@ -403,73 +413,19 @@ i {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-
-
-footer .container {
+.footer-container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
+
 }
 
-.footer-columns {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-footer a {
+/* footer a {
     color: var(--main-color);
-}
+} */
 
-footer a:hover {
+/* footer a:hover {
     color: var(--second-color);
-}
-
-footer p {
-    margin: 0;
-}
-
-footer .footer-columns {
-    display: flex;
-    justify-content: space-between;
-}
-
-footer .footer-column {
-    width: 30%;
-}
-
-footer .footer-title {
-    margin-bottom: 10px;
-}
-
-footer .footer-list {
-    list-style: none;
-    padding-left: 0;
-}
-
-footer .footer-list li {
-    margin-bottom: 5px;
-}
-
-footer .footer-list a {
-    text-decoration: none;
-}
-
-footer .footer-list a:hover {
-    text-decoration: underline;
-}
-
-footer .footer-list li:last-child {
-    margin-bottom: 0;
-}
-
-footer .footer-logo {
-    width: 100px;
-}*/
-
-
+} */
 
 
 
