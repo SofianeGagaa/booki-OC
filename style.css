@@ -27,8 +27,6 @@ body {
     width: 100%;
     max-width: 1440px;
     margin: auto;
-    padding: 8px 8px 8px 8px;
-    box-sizing: content-box;
 }
 
 a {
@@ -81,7 +79,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    padding: 20px 10px 0 0;
 }
 
 img {
@@ -91,7 +88,8 @@ img {
 }
 
 nav img {
-    width: 50px;
+    width: 60px;
+    padding: 30px 0px;
 }
 
 ul {
@@ -100,10 +98,15 @@ ul {
     padding: 0;
 }
 
-li a:hover {
+nav a {
+    border-top: solid 2px transparent;
+    padding: 20px 0;
+}
+
+nav a:hover {
     color: var(--main-color);
     cursor: pointer;
-    text-decoration: overline;
+    border-color: var(--main-color);
 }
 
 nav ul {
@@ -115,12 +118,13 @@ button {
     color: white;
     border: none;
     background-color: var(--main-color);
-    border-radius: 0 8px 8px 0;
-    padding: 5px 5px;
+    border-radius: 0 15px 15px 0;
+    padding: 18px 15px 15px;
 }
 
 .filters {
     display: flex;
+    align-items:center;
 
     ul {
         display: flex;
@@ -141,11 +145,8 @@ button {
     }
 }
 
-form, .filters {
-        margin-bottom: 2px;
-        margin-top: 2px;
-        padding-bottom: 2px;
-        padding-top: 2px;  
+form {
+    padding: 30px 0;
 }
 
 .filters h2 {
@@ -191,9 +192,23 @@ i {
             color: var(--main-color);
         }
 
-        .fa-solid.fa-location-dot {
+        .fa-location-dot {
             color: black;
+            background-color: var(--main-bg-color);
+            border-radius: 15px 0 0 15px;
+            padding: 17px 19px;
+            margin-right: -4px;
         }
+
+        [type="search"] {
+            
+    border-top: solid 1px var(--main-bg-color);
+    border-bottom: solid 1px var(--main-bg-color);
+    border-left: none;
+    border-right: none;
+    padding: 18px 0 15px 0;
+        }
+        
 
 
 .section-title {
