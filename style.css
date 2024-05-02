@@ -34,7 +34,7 @@ body {
     /* border-right: 14px; */
     width: 100%;
     max-width: 1440px;
-    /* margin: auto; */
+    margin: auto;
     /* padding: 14px 20px; */
     /* padding: 0; */
     margin-bottom: 0px;
@@ -116,7 +116,7 @@ ul {
 
 nav a {
     border-top: solid 2px transparent;
-    padding: 20px 0;
+    padding: 28px 0;
 }
 
 nav a:hover {
@@ -141,6 +141,8 @@ button {
 .filters {
     display: flex;
     align-items:center;
+    margin-bottom: 30px;
+    gap: 20px;
 
     ul {
         display: flex;
@@ -150,7 +152,7 @@ button {
     li {
         border: 2px solid var(--main-bg-color);
         border-radius: 20px;
-        padding: 5px 10px;
+        padding: 10px;
         font-weight: bold;
 
         &:hover,
@@ -167,7 +169,6 @@ form {
 
 .filters h2 {
     margin: 0;
-    padding-right: 5px;
     font-weight: bold;
 }
 
@@ -228,7 +229,7 @@ i {
 
 
 .section-title {
-    margin: 0;
+    margin: 0 0 30px;
     font-size: 22px;
 }
 
@@ -339,7 +340,7 @@ i {
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 33px;
+    gap: 30px;
 }
 
 .populaires-cards img {
@@ -401,6 +402,7 @@ figure {
         height: 400px;
         object-fit: cover;
         border-radius: 20px 20px 0 0;
+        width: 100%;
 
 
     }
