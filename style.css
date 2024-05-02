@@ -28,19 +28,10 @@ body {
 }
 
 .main-container {
-    border-right: 0px;
-    border-left: 0px;
-    /* border: top 0px; */
-    /* border-right: 14px; */
-    width: 100%;
     max-width: 1440px;
     margin: auto;
-    /* padding: 14px 20px; */
-    /* padding: 0; */
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding: 0 40px;
+
 }
 
 a {
@@ -377,16 +368,20 @@ i {
 /****** Activities ***********/
 figure {
     margin: 0;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    background-color: #fff;
+    border-radius: 20px;
 
-    
     figcaption {
         margin: 0;
-        padding: 0;
+        padding: 10px;
     }
+
 }
 
 .activities {
     margin-top: 50px;
+    padding: 0 30px;
 
     ul {
         display: flex;
@@ -446,7 +441,7 @@ figure {
 /****** Footer ***********/
 footer {
     margin-top: 50px;
-    padding: 20px;
+    padding: 30px;
     background-color: var(--main-bg-color);
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -454,17 +449,18 @@ footer {
 
 .footer-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-right: 100px;
 
 }
 
-/* footer a {
-    color: var(--main-color);
-} */
+.footer-list {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
-/* footer a:hover {
-    color: var(--second-color);
-} */
 
 
 
