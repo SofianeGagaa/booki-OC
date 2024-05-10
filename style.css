@@ -221,7 +221,6 @@ i {
 .card-title {
     font-size: 16px;
     font-weight: 700;
-    margin: 0;
 }
 
 .euro {
@@ -264,6 +263,7 @@ i {
     gap: 30px;
     flex-wrap: wrap;
     margin-bottom: 30px;
+    height: 230px;
 }
 
 .hebergements-cards a {
@@ -282,6 +282,7 @@ i {
     flex-direction: column;
     justify-content: space-between;
     padding: 5px;
+    margin-top: -5px;
     box-sizing: border-box;
 }
 
@@ -303,6 +304,12 @@ i {
     width: 32%;
 }
 
+.populaires-cards {
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+}
+
 .populaires-title {
     display: flex;
     justify-content: space-between;
@@ -311,7 +318,8 @@ i {
 
 .populaires-cards .card {
     display: flex;
-    gap: 30px;
+    height: 136px;
+
 }
 
 .populaires-cards img {
@@ -333,7 +341,6 @@ i {
 }
 
 .populaires-cards .card-title {
-    margin-top: 10px;
     margin-bottom: 4px;
 }
 
@@ -346,11 +353,13 @@ i {
 }
 
 /****** Activities ***********/
+nav {
+    margin-top: 50px;
+}
 
-.activities-title {
+nav ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    gap: 30px;
 }
 
 
@@ -362,7 +371,10 @@ figure {
     border-radius: 20px;
 
     figcaption {
-        margin: 0;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        margin-top: -5px;
         padding: 10px;
     }
 
@@ -457,12 +469,11 @@ footer {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-
-@media screen and (max-width: 1023.98px) {
+@media screen and (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
     }
-    
+
     .hebergements {
         width: 100%;
     }
@@ -477,28 +488,64 @@ footer {
         flex-direction: row;
         justify-content: space-between;
     }
+
+    .populaires-cards a {
+        width: 30%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media screen and (max-width: 767.98px) {
 
-    .main-container {
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaires-cards {
         display: flex;
-        flex-wrap: wrap;
-        align-content: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
-    nav {
+
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+
+    .activities {
+        padding: 0;
+    }
+
+    .activities-cards {
         display: flex;
-        flex-wrap: wrap;
-    }
-
-    h1 {
-        text-align: justify;
-    }
-
-    button {
-        
+        flex-direction: column;
+        justify-content: space-between;
     }
 
 }
