@@ -258,12 +258,15 @@ i {
     justify-content: space-between;
 }
 
+.hebergements card {
+    height: 230px;
+}
+
 .hebergements-cards {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
     margin-bottom: 30px;
-    height: 230px;
 }
 
 .hebergements-cards a {
