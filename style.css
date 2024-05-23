@@ -272,7 +272,7 @@ i {
 }
 
 /* Ajouts */
-.hebergements card {
+.hebergements .card {
     height: 230px;
 }
 
@@ -528,5 +528,60 @@ footer {
 
 /* Small devices (phones, less than 768px) Petits appareils */
 @media (max-width: 767.98px) {
-    /* ... */
+    .hebergements-cards {
+        flex-flow: column;
+    }
+
+    .hebergements-cards a {
+        width: 100%;
+    }
+
+    .populaires-cards {
+        flex-flow: column;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .activities-cards {
+        flex-flow: column;
+    }
+
+    .activities-cards a {
+        width: 100%;
+    }
+
+    .activities-cards img {
+        height: 200px;
+    }
+
+    .activities-cards .card-title {
+        font-size: 14px;
+    }
+
+    .activities-cards .card-subtitle {
+        font-size: 13px;
+    }
+
+    .activities-cards .card-rating {
+        font-size: 12px;
+    }
+
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-list {
+        margin-top: 0;
+    }
+
+    .footer-list li {
+        margin-top: 10px;
+    }
+
+    .footer-column {
+        margin-top: 20px;
+    }
 }
